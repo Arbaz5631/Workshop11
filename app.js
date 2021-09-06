@@ -4,7 +4,6 @@ const path = require("path");
 const fs = require("fs");
 var bodyParser = require("body-parser");
 app.use(bodyParser.json());
-
 var formidable = require("formidable");
 let date=Date.now();
 app.put('/api/upload', (req, res, next) => {
@@ -85,8 +84,7 @@ app.post("/api/rename",(req,res)=>{
   });
 
 });
-
-   
+  
 
 app.listen(1000, () => {
   console.log("run on port 1000");
